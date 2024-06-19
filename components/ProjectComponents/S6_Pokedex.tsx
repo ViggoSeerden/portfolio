@@ -4,9 +4,10 @@ export function S6_Pokedex() {
     const tags: Record<string, string>[] = [
         { key: 'Flutter', value: 'primary' },
         { key: 'Object Detection', value: 'accent' },
-        { key: 'TensorFlow', value: 'accent' },
-        { key: 'Augumented Reality (AR)', value: 'accent' },
+        { key: 'Teachable Machine with Google', value: 'accent' },
+        { key: 'TensorFlow', value: 'accent' },      
         { key: 'Material Design', value: 'accent' },
+        { key: 'Augumented Reality (AR)', value: 'accent' },
         { key: 'Semester 6', value: 'warning' },
         { key: 'Individual Project', value: 'warning' },
     ]
@@ -26,7 +27,7 @@ export function S6_Pokedex() {
                     An application that acts as a Pokédex, a Pokémon encyclopedia to be used as an companion app of sorts while engaging with Pokémon content.
                 </EuiText>
                 <EuiText>
-                    This app allows users to look up information about each of the original 151 Pokémon, as well as all Pokémon moves and abilities up to 2022.
+                    This app allows users to look up information about each of the original 151 Pokémon, as well as all Pokémon moves and abilities.
                     Notable gimmicks include object detection using a self-trained TensorFlow model, and AR using official 3D Pokémon model assets.
                 </EuiText>
                 <EuiText>

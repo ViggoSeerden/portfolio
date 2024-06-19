@@ -1,21 +1,20 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S4_ArtDetective() {
     const tags: Record<string, string>[] = [
-        { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
-        { key: 'Progressive Web App', value: 'accent' },
-        { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
+        { key: 'Kotlin', value: 'primary' },
+        { key: 'Jetpack Compose', value: 'primary' },
+        { key: 'Object Detection', value: 'accent' },
+        { key: 'TensorFlow', value: 'accent' },
+        { key: 'Google Colab', value: 'accent' },
         { key: 'Semester 4', value: 'warning' },
         { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>Art Detective</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +23,14 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A native Android app that allows users to identify famous paintings and their artists by taking a picture.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    A custom TensorFlow model was trained to recognize 10 world renowned paintings using Google Colab. After the results are returned,
+                    users have the option to learn more about the detected painting and it's artist, being redirected to a Google search to do so.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    The original concept also included being able to recognize music and movies, as well as being able to find upcoming art exhibits.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>

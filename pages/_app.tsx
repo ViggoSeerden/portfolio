@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }, [])
 
     function changeTheme(theme) {
-        setLocalStorage('key', theme)
+        setLocalStorage('theme', theme)
         setTheme(theme)
     }
 

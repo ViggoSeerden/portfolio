@@ -1,21 +1,20 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S4_Stolpersteine() {
     const tags: Record<string, string>[] = [
         { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
+        { key: 'Multi Language', value: 'accent' },
+        { key: 'Open Street Map', value: 'accent' },
         { key: 'Progressive Web App', value: 'accent' },
-        { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
+        { key: 'Scrum', value: 'accent' },
         { key: 'Semester 4', value: 'warning' },
-        { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
+        { key: 'Group Project', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>Stolpersteine App</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +23,15 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A website for finding and learning about the various Stolpersteine spread across the Benelux, commisioned by Stichting 18 September.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    This site provides users with a map that displays all 15.000+ Stolpersteine in The Netherlands, Belgium and Luxembourg, with
+                    information on each individual one. Users also had the option to search for specific ones using a set of filters and sorting methods.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    Besides this, route navigation to a Stolpersteine of choice was also available, as well as notifications when users were within a
+                    specific distance of one. Three languages for screen texts were also available, being Dutch, English and French.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>

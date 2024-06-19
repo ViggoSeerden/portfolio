@@ -1,21 +1,19 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S4_ForecastFrenzy() {
     const tags: Record<string, string>[] = [
-        { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
-        { key: 'Progressive Web App', value: 'accent' },
+        { key: 'Swift', value: 'primary' },
+        { key: 'SwiftUI', value: 'primary' },
         { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
+        { key: 'WeatherKit', value: 'accent' },
         { key: 'Semester 4', value: 'warning' },
         { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>Forecast Frenzy</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +22,16 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A weather forecast app that dynamically changes based on the current weather.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    Besides simply being able to find weather forecasts, with basic information such as temperature and precipitation, a few unique features
+                    were included, such as a recommended Spotify playlist, analogies describing the weather, being able to set alarms, and a dynamic background,
+                    all of which are affected by the current weather.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    The original concept also included a weather based game, which acted as the app's namesake. In this game, users would be asked to prepare
+                    for a set of exaggerated weather conditions to survive, with a daily rotation and online leaderboards.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>

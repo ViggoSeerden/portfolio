@@ -1,21 +1,20 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S5_ShopShop() {
     const tags: Record<string, string>[] = [
         { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
-        { key: 'Progressive Web App', value: 'accent' },
-        { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
-        { key: 'Semester 4', value: 'warning' },
-        { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
+        { key: 'Gatsby', value: 'accent' },
+        { key: 'Contentful', value: 'accent' },
+        { key: 'Algolia', value: 'accent' },
+        { key: 'Multi Language', value: 'accent' },
+        { key: 'Internship', value: 'warning' },
+        { key: 'Job Experience', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>Formatics e-Commerce Marketing Platform</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +23,15 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A website to advertise the Formatics e-Commerce platform.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    This website uses Gatsby and Contentful for articles and other content to help advertise Formatics' e-Commerce platform
+                    to the public. You can sign up for your own e-Commerce platform using this site.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    This site also uses Algolia to search through the content available on the site. All content is also available in both
+                    English and Dutch, through the use of Contentful.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>

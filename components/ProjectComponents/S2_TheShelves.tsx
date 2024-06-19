@@ -1,21 +1,21 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S2_TheShelves() {
     const tags: Record<string, string>[] = [
-        { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
-        { key: 'Progressive Web App', value: 'accent' },
-        { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
-        { key: 'Semester 4', value: 'warning' },
-        { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
+        { key: 'ASP .NET Core MVC', value: 'primary' },
+        { key: 'JavaScript', value: 'primary' },
+        { key: 'SQL', value: 'primary' },
+        { key: 'Three-Tier Architecture', value: 'accent' },
+        { key: 'Object Oriented', value: 'accent' },
+        { key: 'SOLID', value: 'accent' },
+        { key: 'Semester 2', value: 'warning' },
+        { key: 'Individual Project', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>The Shelves</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +24,15 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A full-stack project that allows users to track and manage their video game collection.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    The site provides users with a variety of statistics about their collection, such as the total size or worth. Each individual piece
+                    can also be viewed in detail, with users being able to provide details about these pieces. Wishlist and log features were also available.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    The site used an external API to get the information about each game. Users were able to find the games they want to add through a 
+                    search bar, with input acting as the payload for the API call. The option to manually add a game from scratch was also available.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>

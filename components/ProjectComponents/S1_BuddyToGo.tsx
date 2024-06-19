@@ -1,21 +1,17 @@
 import { EuiBadge, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiImage, EuiSpacer, EuiText, EuiTitle } from "@elastic/eui";
 
-export function S4_Broadway() {
+export function S1_BuddyToGo() {
     const tags: Record<string, string>[] = [
-        { key: 'React', value: 'primary' },
-        { key: 'Voice Recognition', value: 'accent' },
-        { key: 'Progressive Web App', value: 'accent' },
-        { key: 'Spotify API', value: 'accent' },
-        { key: 'ElasticUI', value: 'accent' },
-        { key: 'Semester 4', value: 'warning' },
-        { key: 'Duo Project', value: 'warning' },
-        { key: 'Hobby Project', value: 'warning' },
+        { key: '.NET Core', value: 'primary' },
+        { key: 'WPF', value: 'accent' },
+        { key: 'Semester 1', value: 'warning' },
+        { key: 'Group Project', value: 'warning' },
     ]
 
     return (
         <EuiFlexGroup>
             <EuiFlexItem>
-                <EuiTitle size='s'><h1>Broadway</h1></EuiTitle>
+                <EuiTitle size='s'><h1>Buddy ToGo</h1></EuiTitle>
                 <EuiSpacer size='s' />
                 <EuiFlexGrid columns={3} gutterSize="s" direction="row">
                     {tags.map((tag) => (
@@ -24,16 +20,15 @@ export function S4_Broadway() {
                 </EuiFlexGrid>
                 <EuiSpacer size='s' />
                 <EuiText>
-                    An online platform allowing for voice controlled Spotify playback.
+                    A social media platform designed for students to help or get to know one another.
                 </EuiText>
                 <EuiText>
-                    After connecting your Spotify account with a few simple clicks, session controls become accessible to the user. Song queue's and 
-                    recommendations based on the current song are also visible to the user. 
+                    Besides just making new friends, Buddy ToGo provided users with a set of features designed to give or receive help 
+                    from trusted friends, in order to tackle the issue of loneliness and safety concerns.
                 </EuiText>
                 <EuiText>
-                    This app was later revamped to completely overhaul the code, since the original was admittedly quite unorganized. This version
-                    also removes unnecessary features and fixes several bugs for the definitive experience. This was done solely by me after the
-                    project was already over.
+                    Using this platform, users were able to arrange dates, comfort others about personal issues through a chat, or share their
+                    location to friends for them to keep an eye on, in the event something goes wrong.
                 </EuiText>
             </EuiFlexItem>
             <EuiFlexItem>
